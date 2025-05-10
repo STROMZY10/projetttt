@@ -1,0 +1,70 @@
+.item-buttons button {
+  background-color:hsl(0, 0%, 0%);
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 8px 12px;
+  margin-right: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.item-buttons button:hover {
+  background-color: #000000;
+}
+
+.item-buttons button.clicked {
+  background-color: #d40913; 
+  animation: clickedAnim 0.3s ease;
+}
+.checkout-button {
+  margin-top: 1.5rem;
+  padding: 0.75rem 2rem;
+  background-color: #FFD700;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-button:hover {
+  background-color: #FFD700;
+}
+
+@keyframes clickedAnim {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+ .cart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  text-align: center;
+}
+
+.cart {
+  width: 100%;
+  max-width: 900px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cart-item {
+  margin-bottom: 1rem;
+}
+
+.item-buttons button {
+  margin: 0 0.5rem;
+}
